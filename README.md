@@ -1,46 +1,157 @@
-# Getting Started with Create React App
+# Instagram Stories Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, performant Instagram Stories clone built with React and TypeScript, featuring a smooth user experience and comprehensive test coverage.
 
-## Available Scripts
+## Live Demo
+Check out the live demo: [Instagram Stories Clone](https://instagram-stories-pallav.vercel.app)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Core Functionality
+- **Story Viewing**
+  - Horizontal scrollable stories bar
+  - Story overlay with full-screen view
+  - Auto-advancing stories (5-second duration)
+  - Manual navigation (tap left/right)
+  - Progress indicators for each story
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### User Experience
+- **Navigation**
+  - Tap left/right to navigate between stories
+  - Close button to exit story view
+  - Automatic closure after viewing all stories
+  - Smooth transitions between stories
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Technical Features
+- **Performance Optimizations**
+  - Optimized image loading with loading states
+  - Efficient state management with React.memo
+  - Optimized re-renders with useCallback and useMemo
+  - Smooth animations using CSS transitions
 
-### `npm test`
+### Testing Coverage
+Comprehensive test suite covering:
+- Story bar loading and display
+- Story overlay interactions
+- Navigation between stories
+- Auto-advance functionality
+- Story closure scenarios
+- Edge cases (first/last story navigation)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
+- React 19
+- TypeScript
+- Cypress for E2E testing
+- CSS Modules for styling
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/pallav-au3/instagram-stories.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Install dependencies
+npm install
 
-### `npm run eject`
+# Start the development server
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Running Tests
+```bash
+# Run Cypress tests
+npm run cypress:open
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deployment
+The application is automatically deployed to Vercel. Any push to the main branch will trigger a new deployment.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Code Quality Standards
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### TypeScript Best Practices
+- Strict type checking enabled
+- Interface-first development
+- Proper type definitions for all components
+- Consistent naming conventions
 
-## Learn More
+### Component Structure
+- Modular component architecture
+- Separation of concerns
+- Reusable components
+- Clean and maintainable code
+- Memoized components for performance
+- Optimized event handlers
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Testing Strategy
+- End-to-end tests with Cypress
+- Component-level testing
+- User interaction testing
+- Edge case coverage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## UI/UX Design Principles
+
+### User Interface
+- Clean and minimal design
+- Intuitive navigation
+- Visual feedback for user actions
+- Progress indicators
+- Smooth transitions
+
+## Performance Considerations
+
+### Loading Optimization
+- Efficient image loading with loading states
+- Error handling for failed image loads
+- Smooth loading transitions
+- Optimized asset delivery
+
+### Runtime Performance
+- Efficient state updates with React.memo
+- Optimized re-renders with useCallback
+- Memoized values with useMemo
+- Smooth animations
+- Memory leak prevention
+
+## Recent Optimizations
+
+### Image Loading
+- Implemented loading states for images
+- Added error handling for failed loads
+- Smooth transitions between states
+- Proper image sizing and cover behavior
+
+### Component Optimization
+- Memoized components to prevent unnecessary re-renders
+- Optimized event handlers with useCallback
+- Memoized computed values with useMemo
+- Improved component structure
+
+### Testing Improvements
+- Comprehensive test coverage
+- Stable test cases
+- Reliable component testing
+- Edge case handling
+
+## Future Improvements
+- Enhanced mobile responsiveness
+- Advanced image preloading
+- Improved caching strategies
+- Enhanced touch interactions
+- More sophisticated transitions
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
